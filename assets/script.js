@@ -1,16 +1,58 @@
+// Questions for game with one of four answers
 const questions = [
     {
-        question: "test pick 1",
-        options: ["1", "2", "3", "4"],
+        question: "What does HTML stand for?",
+        options: ["Hypertext Markup Language", "High-level Text Management Language", "Hyper Transfer Markup Language", "Hypertext Text Markup Language"],
+        correctAnswer: "Hypertext Markup Language"
+    },
+    {
+        question: "Which keyword is used to declare a variable in JavaScript?",
+        options: ["var", "let", "const", "variable"],
+        correctAnswer: "var"
+    },
+    {
+        question: "What is the result of the expression '2' + 2 in JavaScript?",
+        options: ["4", "22", "TypeError", "2 + 2"],
+        correctAnswer: "22"
+    },
+    {
+        question: "Which function is used to print something to the console in JavaScript?",
+        options: ["print()", "console.log()", "write()", "display()"],
+        correctAnswer: "console.log()"
+    },
+    {
+        question: "What is the purpose of the 'if' statement in JavaScript?",
+        options: ["To loop through an array", "To declare a function", "To make a decision based on a condition", "To define a class"],
+        correctAnswer: "To make a decision based on a condition"
+    },
+    {
+        question: "Which data type is used for a single character in JavaScript?",
+        options: ["char", "string", "character", "letter"],
+        correctAnswer: "string"
+    },
+    {
+        question: "What is the result of 10 % 3 in JavaScript?",
+        options: ["3", "1", "0.3", "10"],
         correctAnswer: "1"
     },
     {
-        question: "test pick 2",
-        options: ["1", "2", "3", "4"],
-        correctAnswer: "2"
+        question: "Which JavaScript library is commonly used for building user interfaces?",
+        options: ["React", "Angular", "Vue", "jQuery"],
+        correctAnswer: "React"
+    },
+    {
+        question: "What does CSS stand for?",
+        options: ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
+        correctAnswer: "Cascading Style Sheets"
+    },
+    {
+        question: "Which HTML element is used to link an external JavaScript file?",
+        options: ["<script>", "<js>", "<javascript>", "<link>"],
+        correctAnswer: "<script>"
     },
 ];
 
+// DOM elements
 const quizContainer = document.getElementById("quiz-container");
 const startButton = document.getElementById("start-button");
 const quizQuestions = document.getElementById("quiz-questions");
@@ -26,9 +68,10 @@ const highScoresButton = document.getElementById("high-scores-button");
 const highScoresContainer = document.getElementById("high-scores-container");
 const highScoresList = document.getElementById("high-scores-list");
 
+//Intializing game
 let currentQuestionIndex = 0;
 let score = 0;
-let timeRemaining = 60;
+let timeRemaining = 90;
 let timerInterval;
 
 // Function to start the quiz
@@ -175,10 +218,9 @@ function backToGame() {
     currentQuestionIndex = 0;
     score = 0;
     timeRemaining = 60; // Reset the timer to its initial value
-    // You may also need to clear any previous questions or choices on the screen
 
     // Start the quiz again
-    startQuiz();
+    st();
 }
 
 const playAgainButton = document.getElementById("play-again");

@@ -1,3 +1,4 @@
+/* Set the overall styling for the page */
 body {
     font-family: 'DM Sans', Georgia, Times, 'Times New Roman', serif;
     margin: 0;
@@ -8,6 +9,7 @@ body {
     height: 100vh;
 }
 
+/* Styling for the quiz area */
 #quiz-area {
     background-color: lightblue;
     border: black;
@@ -16,6 +18,7 @@ body {
     min-height: 500px;
 }
 
+/* Styling for the quiz container */
 #quiz-container {
     max-width: 800px;
     text-align: center;
@@ -23,25 +26,27 @@ body {
     justify-content: center;
 }
 
+/* Styling for the 'View High Scores' button */
 #high-scores-button {
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
+/* Styling for the timer */
 #timer {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-
+/* Styling for the question text */
 #question-text {
     font-size: 24px;
     margin-top: 40px;
 }
 
-/* Style options as rectangular and stacked */
+/* Styling for option buttons */
 .option-button {
     display: block;
     width: 100%;
@@ -55,7 +60,6 @@ body {
     font-size: 18px;
 }
 
-/* Add spacing between stacked options */
 .option-button + .option-button {
     margin-top: 5px;
 }
@@ -64,15 +68,18 @@ body {
     background-color: #2f857b;
 }
 
+/* Styling for hidden elements */
 .hidden {
     display: none;
 }
 
+/* Styling for the high scores container */
 #high-scores-container {
     text-align: center;
     display: none;
 }
 
+/* Styling for high scores list items */
 #high-scores-list {
     list-style: none;
     padding: 0;
@@ -92,13 +99,13 @@ body {
     background-color: #e0e0e0;
 }
 
-/* Style specific buttons */
+/* Styling for specific buttons */
 #start-button,
 #save-score,
 #high-scores-button,
 #back-to-game,
 #play-again {
-    background-color: #b8dfff; /* Light purple for these buttons */
+    background-color: #b8dfff;
     border-radius: 20px;
     font-size: 16px;
     padding: 10px;
@@ -111,5 +118,5 @@ body {
 #high-scores-button:hover,
 #back-to-game:hover,
 #play-again:hover {
-    background-color: #9bc8ff; /* Slightly darker purple on hover */
+    background-color: #9bc8ff;
 }
