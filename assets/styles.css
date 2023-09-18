@@ -1,4 +1,115 @@
-/* Add your CSS styles here */
+body {
+    font-family: 'DM Sans', Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quiz-area {
+    background-color: lightblue;
+    border: black;
+    border-radius: 20px;
+    min-width: 800px;
+    min-height: 500px;
+}
+
+#quiz-container {
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#high-scores-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+#question-text {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+/* Style options as rectangular and stacked */
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #6dbdda;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Add spacing between stacked options */
+.option-button + .option-button {
+    margin-top: 5px;
+}
+
+.option-button:hover {
+    background-color: #2f857b;
+}
+
 .hidden {
     display: none;
+}
+
+#high-scores-container {
+    text-align: center;
+    display: none;
+}
+
+#high-scores-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#high-scores-list li {
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#high-scores-list li:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+/* Style specific buttons */
+#start-button,
+#save-score,
+#high-scores-button,
+#back-to-game,
+#play-again {
+    background-color: #b8dfff; /* Light purple for these buttons */
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px;
+    border-color: black;
+    font-family: 'DM Sans', Georgia, Times, 'Times New Roman', serif;
+}
+
+#start-button:hover,
+#save-score:hover,
+#high-scores-button:hover,
+#back-to-game:hover,
+#play-again:hover {
+    background-color: #9bc8ff; /* Slightly darker purple on hover */
 }
